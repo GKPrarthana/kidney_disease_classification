@@ -16,4 +16,5 @@ scipy
 flask
 flask-cors
 gdown
+ipykernel
 -e .
