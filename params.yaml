@@ -1,8 +1,9 @@
-key: val
-
+# This is a YAML configuration file for a kidney disease classification project.
+# It contains various parameters for different stages of the project, including data ingestion, model preparation, training, and evaluation.
 AUGMENTATION: True
-IMAGE_SIZE: [224, 224, 3]
+IMAGE_SIZE: [224, 224, 3] # as per VGG 16 model
 BATCH_SIZE: 16
+INCLUDE_TOP: False
 EPOCHS: 1
 CLASSES: 2
 WEIGHTS: imagenet

@@ -1,15 +1,15 @@
-tensorflow
-pandas
-dvc
-mlflow
-notebook
-numpy
-matplotlib
-seaborn
-python-box
+opencv-python==4.9.0.80
+numpy==1.26.4
+deepface==0.0.92
+pandas==2.2.2
+tensorflow==2.16.1
+Pillow==10.3.0
+tf_keras==2.16.0
+mtcnn==0.1.1
+python-box==6.0.2
 pyYAML
 tqdm
-ensure
+ensure==1.0.4
 joblib
 types-pyyaml
 scipy
@@ -17,4 +17,10 @@ flask
 flask-cors
 gdown
 ipykernel
+dvc
+mlflow==2.2.2
+notebook
+matplotlib
+seaborn
 -e .
+#-e . means that the current directory is added to the PYTHONPATH.

@@ -32,3 +32,153 @@
 [2025-04-02 08:37:02,621: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2025-04-11 19:53:46,307: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-11 19:53:46,321: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-11 19:54:01,324: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-11 19:54:01,326: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-11 19:54:18,547: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-11 19:54:18,549: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-11 19:55:23,297: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-11 19:55:23,303: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-11 21:00:03,330: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-11 21:00:03,331: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-11 21:00:03,347: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-11 21:00:03,349: INFO: common: created directory at: artifacts]
+[2025-04-11 21:00:03,349: INFO: common: created directory at: data_ingestion]
+[2025-04-11 21:00:03,350: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1e3q72lfBRd5KX8KulVX39q34vW3y2M2b/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-11 21:17:50,718: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-11 21:17:50,719: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-11 21:17:50,720: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-11 21:17:50,721: INFO: common: created directory at: artifacts]
+[2025-04-11 21:17:50,721: INFO: common: created directory at: data_ingestion]
+[2025-04-11 21:17:50,721: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1e3q72lfBRd5KX8KulVX39q34vW3y2M2b/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-11 21:17:50,727: ERROR: data_ingestion: Error downloading file: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?id=1e3q72lfBRd5KX8KulVX39q34vW3y2M2b (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000018CFFC5CFB0>: Failed to resolve 'drive.google.com' ([Errno 11001] getaddrinfo failed)"))]
+[2025-04-11 21:17:50,729: ERROR: data_ingestion: Error extracting file: Zip file not found: artifacts/data_ingestion/data.zip]
+[2025-04-11 21:17:50,729: ERROR: main: Zip file not found: artifacts/data_ingestion/data.zip]
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_disease_classification\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "c:\users\prarthana\desktop\projects\kidney\kidney_disease_classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "c:\users\prarthana\desktop\projects\kidney\kidney_disease_classification\src\cnnClassifier\components\data_ingestion.py", line 49, in extract_zip_file
+    raise e
+  File "c:\users\prarthana\desktop\projects\kidney\kidney_disease_classification\src\cnnClassifier\components\data_ingestion.py", line 40, in extract_zip_file
+    raise FileNotFoundError(f"Zip file not found: {self.config.local_data_file}")
+FileNotFoundError: Zip file not found: artifacts/data_ingestion/data.zip
+[2025-04-11 21:18:32,089: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-11 21:18:32,091: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-11 21:18:32,092: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-11 21:18:32,093: INFO: common: created directory at: artifacts]
+[2025-04-11 21:18:32,093: INFO: common: created directory at: data_ingestion]
+[2025-04-11 21:18:32,093: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1e3q72lfBRd5KX8KulVX39q34vW3y2M2b/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-11 21:20:47,390: INFO: data_ingestion: File downloaded successfully: artifacts/data_ingestion/data.zip]
+[2025-04-11 21:20:48,184: INFO: data_ingestion: File extracted successfully to artifacts/data_ingestion]
+[2025-04-11 21:20:48,184: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-11 21:20:52,516: INFO: main: *******************]
+[2025-04-11 21:20:52,516: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-11 21:20:52,517: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-11 21:20:52,518: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-11 21:20:52,519: INFO: common: created directory at: artifacts]
+[2025-04-11 21:20:52,520: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-11 21:20:52,520: ERROR: main: "'ConfigBox' object has no attribute 'include_top'"]
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'INCLUDE_TOP'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'INCLUDE_TOP'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'INCLUDE_TOP'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\box\config_box.py", line 28, in __getattr__
+    return super().__getattr__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'INCLUDE_TOP'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'include_top'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'include_top'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'include_top'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_disease_classification\main.py", line 21, in <module>
+    obj.main()
+  File "c:\users\prarthana\desktop\projects\kidney\kidney_disease_classification\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\prarthana\desktop\projects\kidney\kidney_disease_classification\src\cnnClassifier\config\configuration.py", line 50, in get_prepare_base_model_config
+    params_include_top=self.params.INCLUDE_TOP,
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\box\config_box.py", line 30, in __getattr__
+    return super().__getattr__(item.lower())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'include_top'"
+[2025-04-11 21:24:36,496: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-11 21:24:36,497: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-11 21:24:36,514: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-11 21:24:36,515: INFO: common: created directory at: artifacts]
+[2025-04-11 21:24:36,515: INFO: common: created directory at: data_ingestion]
+[2025-04-11 21:24:36,516: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1e3q72lfBRd5KX8KulVX39q34vW3y2M2b/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-11 21:25:45,888: INFO: data_ingestion: File downloaded successfully: artifacts/data_ingestion/data.zip]
+[2025-04-11 21:25:46,498: INFO: data_ingestion: File extracted successfully to artifacts/data_ingestion]
+[2025-04-11 21:25:46,499: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-11 21:25:50,032: INFO: main: *******************]
+[2025-04-11 21:25:50,033: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-11 21:25:50,034: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-11 21:25:50,036: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-11 21:25:50,036: INFO: common: created directory at: artifacts]
+[2025-04-11 21:25:50,037: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-11 21:26:52,197: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-11 21:26:52,313: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-11 21:26:52,393: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
