@@ -1,0 +1,4 @@
+[2025-04-13 23:29:59,162: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-13 23:29:59,164: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-13 23:29:59,165: INFO: common: created directory at: artifacts]
+[2025-04-13 23:29:59,166: INFO: common: created directory at: artifacts\training]
