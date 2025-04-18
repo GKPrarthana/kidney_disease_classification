@@ -29,17 +29,7 @@ except Exception as e:
         raise e
      
      
-STAGE_NAME = "Training"
-try:
-   logger.info(f"*******************")
-   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-   from cnnClassifier.pipeline.stage_03_model_training import ModelTrainingPipeline
-   model_training = ModelTrainingPipeline()
-   model_training.main()
-   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
-except Exception as e:
-        logger.exception(e)
-        raise e
+
      
 
 

@@ -526,3 +526,294 @@ x==========x]
 [2025-04-13 23:43:24,883: INFO: common: created directory at: artifacts\training]
 [2025-04-13 23:43:25,034: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
 [2025-04-13 23:49:46,698: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-14 09:30:40,327: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 09:30:40,329: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 09:30:40,329: INFO: common: created directory at: artifacts]
+[2025-04-14 09:32:26,682: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 09:32:26,686: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 09:32:26,688: INFO: common: created directory at: artifacts]
+[2025-04-14 09:32:26,690: INFO: common: created directory at: artifacts\training]
+[2025-04-14 09:32:27,346: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-14 09:33:26,114: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 09:33:26,116: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 09:33:26,118: INFO: common: created directory at: artifacts]
+[2025-04-14 09:33:26,119: INFO: common: created directory at: artifacts\training]
+[2025-04-14 09:33:59,195: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 09:33:59,198: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 09:33:59,200: INFO: common: created directory at: artifacts]
+[2025-04-14 09:33:59,202: INFO: common: created directory at: artifacts\training]
+[2025-04-14 09:34:56,610: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 09:34:56,614: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 09:34:56,617: INFO: common: created directory at: artifacts]
+[2025-04-14 09:34:56,621: INFO: common: created directory at: artifacts\training]
+[2025-04-14 09:38:14,316: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 09:38:14,318: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 09:38:14,320: INFO: common: created directory at: artifacts]
+[2025-04-14 09:40:45,819: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 09:40:45,822: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 09:40:45,825: INFO: common: created directory at: artifacts]
+[2025-04-14 09:40:45,829: INFO: common: created directory at: artifacts\training]
+[2025-04-14 09:40:45,934: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-14 09:42:20,048: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 09:42:20,056: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 09:42:20,061: INFO: common: created directory at: artifacts]
+[2025-04-14 09:42:20,062: INFO: common: created directory at: artifacts\training]
+[2025-04-14 09:42:20,251: WARNING: legacy_h5_format: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.]
+[2025-04-14 09:44:50,468: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 09:44:50,474: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 09:44:50,476: INFO: common: created directory at: artifacts]
+[2025-04-14 09:44:50,480: INFO: common: created directory at: artifacts\training]
+[2025-04-14 09:44:50,706: WARNING: legacy_h5_format: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.]
+[2025-04-14 09:45:19,940: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 09:45:19,945: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 09:45:19,947: INFO: common: created directory at: artifacts]
+[2025-04-14 09:45:19,949: INFO: common: created directory at: artifacts\training]
+[2025-04-14 09:45:20,115: WARNING: legacy_h5_format: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.]
+[2025-04-14 09:46:39,426: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-14 09:46:39,427: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 09:46:39,428: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 09:46:39,429: INFO: common: created directory at: artifacts]
+[2025-04-14 09:46:39,430: INFO: common: created directory at: data_ingestion]
+[2025-04-14 09:46:39,430: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1e3q72lfBRd5KX8KulVX39q34vW3y2M2b/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-14 09:48:14,575: INFO: data_ingestion: File downloaded successfully: artifacts/data_ingestion/data.zip]
+[2025-04-14 09:48:15,179: INFO: data_ingestion: File extracted successfully to artifacts/data_ingestion]
+[2025-04-14 09:48:15,180: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-14 09:48:15,180: INFO: main: *******************]
+[2025-04-14 09:48:15,180: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-14 09:48:15,182: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 09:48:15,184: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 09:48:15,184: INFO: common: created directory at: artifacts]
+[2025-04-14 09:48:15,185: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-14 09:48:15,558: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-14 09:48:15,708: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-14 09:48:15,809: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-04-14 09:48:15,810: INFO: main: *******************]
+[2025-04-14 09:48:15,810: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-04-14 09:48:15,819: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 09:48:15,820: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 09:48:15,820: INFO: common: created directory at: artifacts]
+[2025-04-14 09:48:15,821: INFO: common: created directory at: artifacts\training]
+[2025-04-14 09:48:15,978: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-14 09:48:16,015: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-04-14 23:24:10,451: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 23:24:10,469: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 23:24:10,471: INFO: common: created directory at: artifacts]
+[2025-04-14 23:24:10,474: INFO: common: created directory at: artifacts\training]
+[2025-04-14 23:24:11,039: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-14 23:25:04,983: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 23:25:04,987: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 23:25:04,990: INFO: common: created directory at: artifacts]
+[2025-04-14 23:25:04,991: INFO: common: created directory at: artifacts\training]
+[2025-04-14 23:25:05,355: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-14 23:25:22,039: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 23:25:22,050: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 23:25:22,053: INFO: common: created directory at: artifacts]
+[2025-04-14 23:25:22,057: INFO: common: created directory at: artifacts\training]
+[2025-04-14 23:25:22,330: WARNING: legacy_h5_format: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.]
+[2025-04-14 23:28:01,399: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 23:28:01,426: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 23:28:01,437: INFO: common: created directory at: artifacts]
+[2025-04-14 23:28:01,449: INFO: common: created directory at: artifacts\training]
+[2025-04-14 23:28:02,062: WARNING: legacy_h5_format: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.]
+[2025-04-14 23:28:24,072: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-14 23:28:24,076: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-14 23:28:24,078: INFO: common: created directory at: artifacts]
+[2025-04-14 23:28:24,080: INFO: common: created directory at: artifacts\training]
+[2025-04-14 23:28:24,294: WARNING: legacy_h5_format: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.]
+[2025-04-18 18:35:31,558: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-18 18:35:31,572: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-18 18:35:31,574: INFO: common: created directory at: artifacts]
+[2025-04-18 18:35:31,576: INFO: common: created directory at: artifacts\training]
+[2025-04-18 18:35:32,021: WARNING: legacy_h5_format: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.]
+[2025-04-18 18:36:20,062: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-18 18:36:20,070: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-18 18:36:20,074: INFO: common: created directory at: artifacts]
+[2025-04-18 18:36:20,077: INFO: common: created directory at: artifacts\training]
+[2025-04-18 18:36:20,344: WARNING: legacy_h5_format: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.]
+[2025-04-18 18:37:19,131: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-18 18:37:19,133: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-18 18:37:19,135: INFO: common: created directory at: artifacts]
+[2025-04-18 18:37:19,138: INFO: common: created directory at: artifacts\training]
+[2025-04-18 18:37:19,303: WARNING: legacy_h5_format: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.]
+[2025-04-18 18:38:42,295: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-18 18:38:42,297: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-18 18:38:42,298: INFO: common: created directory at: artifacts]
+[2025-04-18 18:38:42,300: INFO: common: created directory at: artifacts\training]
+[2025-04-18 18:38:42,433: WARNING: legacy_h5_format: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.]
+[2025-04-18 18:40:42,743: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-18 18:40:42,761: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-18 18:40:42,770: INFO: common: created directory at: artifacts]
+[2025-04-18 18:40:42,783: INFO: common: created directory at: artifacts\training]
+[2025-04-18 18:40:42,989: WARNING: legacy_h5_format: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.]
+[2025-04-18 18:41:41,365: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-18 18:41:41,367: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-18 18:41:41,369: INFO: common: created directory at: artifacts]
+[2025-04-18 18:41:41,371: INFO: common: created directory at: artifacts\training]
+[2025-04-18 18:41:41,518: WARNING: legacy_h5_format: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.]
+[2025-04-18 18:49:31,488: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-18 18:49:31,489: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-18 18:49:31,490: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-18 18:49:31,491: INFO: common: created directory at: artifacts]
+[2025-04-18 18:49:31,492: INFO: common: created directory at: data_ingestion]
+[2025-04-18 18:49:31,493: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1e3q72lfBRd5KX8KulVX39q34vW3y2M2b/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-18 18:50:34,017: INFO: data_ingestion: File downloaded successfully: artifacts/data_ingestion/data.zip]
+[2025-04-18 18:50:34,694: INFO: data_ingestion: File extracted successfully to artifacts/data_ingestion]
+[2025-04-18 18:50:34,694: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-18 18:50:34,695: INFO: main: *******************]
+[2025-04-18 18:50:34,695: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-18 18:50:34,696: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-18 18:50:34,697: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-18 18:50:34,697: INFO: common: created directory at: artifacts]
+[2025-04-18 18:50:34,698: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-18 18:50:35,172: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-18 18:50:35,306: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-18 18:50:35,428: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-04-18 19:00:42,592: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-18 19:00:42,593: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-18 19:00:42,594: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-18 19:00:42,595: INFO: common: created directory at: artifacts]
+[2025-04-18 19:00:42,596: INFO: common: created directory at: data_ingestion]
+[2025-04-18 19:00:42,596: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1e3q72lfBRd5KX8KulVX39q34vW3y2M2b/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-18 19:01:50,185: INFO: data_ingestion: File downloaded successfully: artifacts/data_ingestion/data.zip]
+[2025-04-18 19:01:50,800: INFO: data_ingestion: File extracted successfully to artifacts/data_ingestion]
+[2025-04-18 19:01:50,800: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-18 19:01:50,800: INFO: main: *******************]
+[2025-04-18 19:01:50,801: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-18 19:01:50,802: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-18 19:01:50,803: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-18 19:01:50,804: INFO: common: created directory at: artifacts]
+[2025-04-18 19:01:50,805: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-18 19:01:51,176: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-18 19:01:51,304: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-18 19:01:51,409: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-04-18 19:04:40,725: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-18 19:04:40,761: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-18 19:04:40,763: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-18 19:04:40,764: INFO: common: created directory at: artifacts]
+[2025-04-18 19:04:40,765: INFO: common: created directory at: data_ingestion]
+[2025-04-18 19:04:40,766: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1e3q72lfBRd5KX8KulVX39q34vW3y2M2b/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-18 19:06:45,327: INFO: data_ingestion: File downloaded successfully: artifacts/data_ingestion/data.zip]
+[2025-04-18 19:06:45,953: INFO: data_ingestion: File extracted successfully to artifacts/data_ingestion]
+[2025-04-18 19:06:45,953: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-18 19:06:45,954: INFO: main: *******************]
+[2025-04-18 19:06:45,954: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-18 19:06:45,955: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-18 19:06:45,956: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-18 19:06:45,956: INFO: common: created directory at: artifacts]
+[2025-04-18 19:06:45,957: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-18 19:06:45,958: ERROR: main: "'ConfigBox' object has no attribute 'updated_base_model_path'"]
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\AppData\Local\Programs\Python\Python312\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\AppData\Local\Programs\Python\Python312\Lib\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\AppData\Local\Programs\Python\Python312\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'updated_base_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\AppData\Local\Programs\Python\Python312\Lib\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\AppData\Local\Programs\Python\Python312\Lib\site-packages\box\config_box.py", line 28, in __getattr__
+    return super().__getattr__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\AppData\Local\Programs\Python\Python312\Lib\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'updated_base_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\AppData\Local\Programs\Python\Python312\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\AppData\Local\Programs\Python\Python312\Lib\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\AppData\Local\Programs\Python\Python312\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'updated_base_model_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\AppData\Local\Programs\Python\Python312\Lib\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'updated_base_model_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_disease_classification\main.py", line 25, in <module>
+    prepare_base_model.main()
+  File "c:\users\prarthana\desktop\projects\kidney\kidney_disease_classification\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\prarthana\desktop\projects\kidney\kidney_disease_classification\src\cnnClassifier\config\configuration.py", line 45, in get_prepare_base_model_config
+    updated_base_model_path=Path(config.updated_base_model_path),
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\AppData\Local\Programs\Python\Python312\Lib\site-packages\box\config_box.py", line 30, in __getattr__
+    return super().__getattr__(item.lower())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\AppData\Local\Programs\Python\Python312\Lib\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'updated_base_model_path'"
+[2025-04-18 19:13:48,837: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-18 19:13:48,864: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-18 19:13:48,865: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-18 19:13:48,866: INFO: common: created directory at: artifacts]
+[2025-04-18 19:13:48,867: INFO: common: created directory at: data_ingestion]
+[2025-04-18 19:13:48,867: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1e3q72lfBRd5KX8KulVX39q34vW3y2M2b/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-18 19:15:14,051: INFO: data_ingestion: File downloaded successfully: artifacts/data_ingestion/data.zip]
+[2025-04-18 19:15:14,693: INFO: data_ingestion: File extracted successfully to artifacts/data_ingestion]
+[2025-04-18 19:15:14,693: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-18 19:15:14,693: INFO: main: *******************]
+[2025-04-18 19:15:14,693: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-18 19:15:14,694: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-18 19:15:14,695: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-18 19:15:14,696: INFO: common: created directory at: artifacts]
+[2025-04-18 19:15:14,697: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-18 19:15:14,958: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-18 19:15:15,069: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-18 19:15:15,176: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
