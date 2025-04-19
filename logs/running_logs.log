@@ -1868,3 +1868,49 @@ x==========x]
 [2025-04-19 09:08:43,570: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:08:43] "POST /predict HTTP/1.1" 200 -]
 [2025-04-19 09:12:18,465: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
 [2025-04-19 09:12:20,123: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:12:20] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 09:14:41,907: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:14:41] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:20:28,088: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.166.217:8080]
+[2025-04-19 09:20:28,088: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-19 09:20:31,580: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:20:31] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:20:40,872: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:20:40] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:20:43,264: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:20:43] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:20:43,815: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:20:43] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:20:44,246: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:20:44] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:20:44,705: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:20:44] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:20:45,111: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:20:45] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:20:45,246: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:20:45] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:20:45,382: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:20:45] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:20:45,559: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:20:45] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:20:45,692: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:20:45] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:20:45,871: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:20:45] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:20:46,014: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:20:46] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:20:46,158: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:20:46] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:20:46,305: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:20:46] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:20:46,433: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:20:46] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:22:10,177: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:22:10] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:22:33,657: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.166.217:8080]
+[2025-04-19 09:22:33,657: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-19 09:22:36,224: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:22:36] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:23:35,123: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.166.217:8080]
+[2025-04-19 09:23:35,123: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-19 09:23:38,526: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:23:38] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:23:48,156: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 09:23:50,580: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:23:50] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 09:23:54,874: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:23:54] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:25:24,519: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.166.217:8080]
+[2025-04-19 09:25:24,519: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-19 09:25:45,027: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:25:45] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:26:03,119: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 09:26:06,279: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:26:06] "POST /predict HTTP/1.1" 200 -]
