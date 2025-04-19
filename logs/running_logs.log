@@ -1103,3 +1103,758 @@ x==========x]
 [2025-04-19 01:17:52,024: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2025-04-19 01:26:57,277: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.166.217:8080]
+[2025-04-19 01:26:57,278: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-19 01:27:13,618: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:27:13] "GET / HTTP/1.1" 200 -]
+[2025-04-19 01:27:13,773: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:27:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-04-19 01:27:21,494: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:27:21] "GET / HTTP/1.1" 200 -]
+[2025-04-19 01:27:33,080: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:27:33] "GET / HTTP/1.1" 200 -]
+[2025-04-19 01:27:57,932: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:27:57] "GET / HTTP/1.1" 200 -]
+[2025-04-19 01:32:09,239: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:32:09] "GET / HTTP/1.1" 200 -]
+[2025-04-19 01:32:11,092: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:32:11] "GET / HTTP/1.1" 200 -]
+[2025-04-19 01:38:07,968: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.166.217:8080]
+[2025-04-19 01:38:07,968: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-19 01:38:18,600: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:38:18] "GET / HTTP/1.1" 200 -]
+[2025-04-19 01:43:08,870: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.166.217:8080]
+[2025-04-19 01:43:08,870: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-19 01:43:18,785: INFO: _internal: 192.168.166.217 - - [19/Apr/2025 01:43:18] "GET / HTTP/1.1" 200 -]
+[2025-04-19 01:43:20,210: INFO: _internal: 192.168.166.217 - - [19/Apr/2025 01:43:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-04-19 01:44:42,375: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:44:42] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 01:44:42,664: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_disease_classification\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\prarthana\desktop\projects\kidney\kidney_disease_classification\src\cnnClassifier\pipeline\prediction.py", line 17, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\keras\src\saving\saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 116, in load_model_from_hdf5
+    f = h5py.File(filepath, mode="r")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\h5py\_hl\files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\h5py\_hl\files.py", line 238, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\\h5f.pyx", line 102, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'model\model.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+[2025-04-19 01:44:42,712: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:44:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-04-19 01:44:44,954: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_disease_classification\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\prarthana\desktop\projects\kidney\kidney_disease_classification\src\cnnClassifier\pipeline\prediction.py", line 17, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\keras\src\saving\saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 116, in load_model_from_hdf5
+    f = h5py.File(filepath, mode="r")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\h5py\_hl\files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\h5py\_hl\files.py", line 238, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\\h5f.pyx", line 102, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'model\model.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+[2025-04-19 01:44:44,965: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:44:44] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-04-19 01:45:09,046: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-19 01:45:09,070: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 01:45:09,085: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 01:45:09,090: INFO: common: created directory at: artifacts]
+[2025-04-19 01:45:09,094: INFO: common: created directory at: data_ingestion]
+[2025-04-19 01:45:09,098: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1e3q72lfBRd5KX8KulVX39q34vW3y2M2b/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-19 01:45:54,313: INFO: data_ingestion: File downloaded successfully: artifacts/data_ingestion/data.zip]
+[2025-04-19 01:45:55,122: INFO: data_ingestion: File extracted successfully to artifacts/data_ingestion]
+[2025-04-19 01:45:55,123: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-19 01:45:55,123: INFO: main: *******************]
+[2025-04-19 01:45:55,123: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-19 01:45:55,124: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 01:45:55,126: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 01:45:55,127: INFO: common: created directory at: artifacts]
+[2025-04-19 01:45:55,128: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-19 01:45:55,773: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 01:45:56,025: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 01:45:56,171: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-04-19 01:45:56,172: INFO: main: *******************]
+[2025-04-19 01:45:56,172: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-04-19 01:45:56,174: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 01:45:56,176: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 01:45:56,177: INFO: common: created directory at: artifacts]
+[2025-04-19 01:45:56,178: INFO: common: created directory at: artifacts\training]
+[2025-04-19 01:51:18,348: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:51:18] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 01:51:18,627: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_disease_classification\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\prarthana\desktop\projects\kidney\kidney_disease_classification\src\cnnClassifier\pipeline\prediction.py", line 17, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\keras\src\saving\saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 116, in load_model_from_hdf5
+    f = h5py.File(filepath, mode="r")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\h5py\_hl\files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\h5py\_hl\files.py", line 238, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\\h5f.pyx", line 102, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'model\model.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+[2025-04-19 01:51:18,649: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:51:18] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-04-19 01:51:23,581: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:51:23] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 01:51:23,914: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_disease_classification\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\prarthana\desktop\projects\kidney\kidney_disease_classification\src\cnnClassifier\pipeline\prediction.py", line 17, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\keras\src\saving\saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 116, in load_model_from_hdf5
+    f = h5py.File(filepath, mode="r")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\h5py\_hl\files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\h5py\_hl\files.py", line 238, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\\h5f.pyx", line 102, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'model\model.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+[2025-04-19 01:51:23,930: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:51:23] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-04-19 01:51:29,281: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:51:29] "OPTIONS /train?_=1745007663651 HTTP/1.1" 200 -]
+[2025-04-19 01:52:41,912: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-19 01:52:41,919: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 01:52:41,966: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 01:52:41,968: INFO: common: created directory at: artifacts]
+[2025-04-19 01:52:42,008: INFO: common: created directory at: data_ingestion]
+[2025-04-19 01:52:42,040: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1e3q72lfBRd5KX8KulVX39q34vW3y2M2b/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-19 01:53:21,951: INFO: data_ingestion: File downloaded successfully: artifacts/data_ingestion/data.zip]
+[2025-04-19 01:53:24,171: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 01:53:24,352: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-04-19 01:53:24,352: INFO: main: *******************]
+[2025-04-19 01:53:24,352: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-04-19 01:53:24,356: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 01:53:24,359: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 01:53:24,361: INFO: common: created directory at: artifacts]
+[2025-04-19 01:53:24,785: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 01:53:25,431: INFO: data_ingestion: File extracted successfully to artifacts/data_ingestion]
+[2025-04-19 01:53:25,433: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-19 01:53:25,434: INFO: main: *******************]
+[2025-04-19 01:53:25,435: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-19 01:53:25,441: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 01:53:25,446: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 01:53:25,449: INFO: common: created directory at: artifacts]
+[2025-04-19 01:53:25,451: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-19 01:53:26,641: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 01:53:27,950: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 01:53:28,628: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-04-19 01:53:28,639: INFO: main: *******************]
+[2025-04-19 01:53:28,660: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-04-19 01:53:28,667: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 01:53:28,677: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 01:53:28,681: INFO: common: created directory at: artifacts]
+[2025-04-19 01:53:28,684: INFO: common: created directory at: artifacts\training]
+[2025-04-19 01:54:44,496: INFO: common: json file saved at: scores.json]
+[2025-04-19 01:54:44,547: INFO: common: json file saved at: scores.json]
+[2025-04-19 01:59:14,677: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-04-19 01:59:20,989: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:59:20] "GET /train?_=1745007200179 HTTP/1.1" 200 -]
+[2025-04-19 01:59:31,237: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:59:31] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 01:59:31,504: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_disease_classification\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\prarthana\desktop\projects\kidney\kidney_disease_classification\src\cnnClassifier\pipeline\prediction.py", line 17, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\keras\src\saving\saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 116, in load_model_from_hdf5
+    f = h5py.File(filepath, mode="r")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\h5py\_hl\files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\h5py\_hl\files.py", line 238, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\\h5f.pyx", line 102, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'model\model.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+[2025-04-19 01:59:31,523: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 01:59:31] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-04-19 02:01:57,226: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 02:01:57,420: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-04-19 02:01:57,421: INFO: main: *******************]
+[2025-04-19 02:01:57,422: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-04-19 02:01:57,426: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 02:01:57,430: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 02:01:57,431: INFO: common: created directory at: artifacts]
+[2025-04-19 02:01:58,179: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 02:02:54,003: INFO: common: json file saved at: scores.json]
+[2025-04-19 02:02:54,007: INFO: common: json file saved at: scores.json]
+[2025-04-19 02:02:54,008: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-04-19 02:02:56,054: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 02:02:56] "GET /train?_=1745007663651 HTTP/1.1" 200 -]
+[2025-04-19 02:07:02,524: INFO: _internal: 192.168.166.217 - - [19/Apr/2025 02:07:02] "GET / HTTP/1.1" 200 -]
+[2025-04-19 02:07:14,615: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 02:07:14] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 02:07:14,866: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_disease_classification\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\prarthana\desktop\projects\kidney\kidney_disease_classification\src\cnnClassifier\pipeline\prediction.py", line 17, in predict
+    #model = load_model(os.path.join("model", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\keras\src\saving\saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 116, in load_model_from_hdf5
+    f = h5py.File(filepath, mode="r")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\h5py\_hl\files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\h5py\_hl\files.py", line 238, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\\h5f.pyx", line 102, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'model\model.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+[2025-04-19 02:07:14,928: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 02:07:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-04-19 02:08:03,578: INFO: _internal: 192.168.166.217 - - [19/Apr/2025 02:08:03] "GET / HTTP/1.1" 200 -]
+[2025-04-19 02:08:18,165: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 02:08:18] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 02:08:18,450: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_disease_classification\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\prarthana\desktop\projects\kidney\kidney_disease_classification\src\cnnClassifier\pipeline\prediction.py", line 17, in predict
+    #model = load_model(os.path.join("model", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\keras\src\saving\saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 116, in load_model_from_hdf5
+    f = h5py.File(filepath, mode="r")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\h5py\_hl\files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prarthana\Desktop\projects\kidney\kidney_env\Lib\site-packages\h5py\_hl\files.py", line 238, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\\h5f.pyx", line 102, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'model\model.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+[2025-04-19 02:08:18,523: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 02:08:18] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-04-19 02:09:53,782: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.166.217:8080]
+[2025-04-19 02:09:53,782: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-19 02:09:58,022: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 02:09:58] "GET / HTTP/1.1" 200 -]
+[2025-04-19 02:10:11,704: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 02:10:11] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 02:10:13,196: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 02:10:15,042: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 02:10:15] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 02:11:28,358: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.166.217:8080]
+[2025-04-19 02:11:28,359: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-19 02:11:32,216: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 02:11:32] "GET / HTTP/1.1" 200 -]
+[2025-04-19 02:11:42,066: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 02:11:42] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 02:11:43,472: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 02:11:44,875: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 02:11:44] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 02:15:02,720: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.166.217:8080]
+[2025-04-19 02:15:02,720: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-19 02:15:09,151: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 02:15:09] "GET / HTTP/1.1" 200 -]
+[2025-04-19 02:15:19,839: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 02:15:19] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 02:15:20,302: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 02:15:20,644: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 02:15:20] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 02:15:47,225: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-19 02:15:47,226: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 02:15:47,227: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 02:15:47,228: INFO: common: created directory at: artifacts]
+[2025-04-19 02:15:47,229: INFO: common: created directory at: data_ingestion]
+[2025-04-19 02:15:47,229: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1e3q72lfBRd5KX8KulVX39q34vW3y2M2b/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-19 02:16:25,829: INFO: data_ingestion: File downloaded successfully: artifacts/data_ingestion/data.zip]
+[2025-04-19 02:16:26,407: INFO: data_ingestion: File extracted successfully to artifacts/data_ingestion]
+[2025-04-19 02:16:26,407: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-19 02:16:26,407: INFO: main: *******************]
+[2025-04-19 02:16:26,408: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-19 02:16:26,409: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 02:16:26,410: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 02:16:26,410: INFO: common: created directory at: artifacts]
+[2025-04-19 02:16:26,411: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-19 02:16:26,764: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 02:16:26,929: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 02:16:26,998: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-04-19 02:16:26,999: INFO: main: *******************]
+[2025-04-19 02:16:26,999: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-04-19 02:16:27,002: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 02:16:27,003: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 02:16:27,005: INFO: common: created directory at: artifacts]
+[2025-04-19 02:16:27,005: INFO: common: created directory at: artifacts\training]
+[2025-04-19 02:22:47,289: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 02:22:47,551: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-04-19 02:22:47,552: INFO: main: *******************]
+[2025-04-19 02:22:47,553: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-04-19 02:22:47,556: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 02:22:47,561: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 02:22:47,562: INFO: common: created directory at: artifacts]
+[2025-04-19 02:22:47,938: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 02:23:24,727: INFO: common: json file saved at: scores.json]
+[2025-04-19 02:23:24,732: INFO: common: json file saved at: scores.json]
+[2025-04-19 02:23:24,733: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-04-19 02:23:25,838: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 02:23:25] "GET /train?_=1745009109280 HTTP/1.1" 200 -]
+[2025-04-19 07:52:33,849: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 07:52:33] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 07:52:34,921: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 07:52:36,328: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 07:52:36] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 07:52:45,162: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 07:52:45] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 07:52:45,878: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 07:52:47,140: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 07:52:47] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 08:07:34,597: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.166.217:8080]
+[2025-04-19 08:07:34,598: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-19 08:07:38,286: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:07:38] "GET / HTTP/1.1" 200 -]
+[2025-04-19 08:07:57,116: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-19 08:07:57,118: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 08:07:57,120: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 08:07:57,121: INFO: common: created directory at: artifacts]
+[2025-04-19 08:07:57,121: INFO: common: created directory at: data_ingestion]
+[2025-04-19 08:07:57,121: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1e3q72lfBRd5KX8KulVX39q34vW3y2M2b/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-19 08:08:46,883: INFO: data_ingestion: File downloaded successfully: artifacts/data_ingestion/data.zip]
+[2025-04-19 08:08:47,665: INFO: data_ingestion: File extracted successfully to artifacts/data_ingestion]
+[2025-04-19 08:08:47,666: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-19 08:08:47,666: INFO: main: *******************]
+[2025-04-19 08:08:47,666: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-19 08:08:47,667: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 08:08:47,669: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 08:08:47,670: INFO: common: created directory at: artifacts]
+[2025-04-19 08:08:47,670: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-19 08:08:48,308: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 08:08:48,690: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 08:08:48,965: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-04-19 08:08:48,965: INFO: main: *******************]
+[2025-04-19 08:08:48,966: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-04-19 08:08:48,968: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 08:08:48,971: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 08:08:48,972: INFO: common: created directory at: artifacts]
+[2025-04-19 08:08:48,972: INFO: common: created directory at: artifacts\training]
+[2025-04-19 08:14:26,839: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 08:14:26,979: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-04-19 08:14:26,979: INFO: main: *******************]
+[2025-04-19 08:14:26,979: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-04-19 08:14:26,981: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 08:14:26,983: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 08:14:26,984: INFO: common: created directory at: artifacts]
+[2025-04-19 08:14:27,219: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:15:01,519: INFO: common: json file saved at: scores.json]
+[2025-04-19 08:15:01,521: INFO: common: json file saved at: scores.json]
+[2025-04-19 08:15:01,522: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-04-19 08:15:02,700: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:15:02] "GET /train?_=1745030258527 HTTP/1.1" 200 -]
+[2025-04-19 08:16:31,933: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:16:31] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 08:16:32,629: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:16:33,292: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:16:33] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 08:16:45,898: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:16:45] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 08:16:46,412: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:16:46,926: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:16:46] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 08:16:58,029: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:16:58] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 08:16:59,030: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:17:00,588: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:17:00] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 08:21:14,646: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.166.217:8080]
+[2025-04-19 08:21:14,647: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-19 08:21:26,163: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:21:26] "GET / HTTP/1.1" 200 -]
+[2025-04-19 08:21:35,899: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:21:35] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 08:21:37,583: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:21:37,763: INFO: prediction: Input image shape: (1, 224, 224, 3)]
+[2025-04-19 08:21:39,717: INFO: prediction: Model prediction: [[0.04791145 0.9520886 ]], Shape: (1, 2)]
+[2025-04-19 08:21:39,718: ERROR: prediction: Unexpected prediction shape: (1, 2), expected (1, 1)]
+[2025-04-19 08:21:39,721: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:21:39] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 08:22:52,975: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:22:52] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 08:22:53,944: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:22:54,047: INFO: prediction: Input image shape: (1, 224, 224, 3)]
+[2025-04-19 08:22:55,547: INFO: prediction: Model prediction: [[0.04791145 0.9520886 ]], Shape: (1, 2)]
+[2025-04-19 08:22:55,548: ERROR: prediction: Unexpected prediction shape: (1, 2), expected (1, 1)]
+[2025-04-19 08:22:55,550: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:22:55] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 08:23:00,538: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:23:00] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 08:23:01,453: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:23:01,510: INFO: prediction: Input image shape: (1, 224, 224, 3)]
+[2025-04-19 08:23:02,990: INFO: prediction: Model prediction: [[0.04791145 0.9520886 ]], Shape: (1, 2)]
+[2025-04-19 08:23:02,992: ERROR: prediction: Unexpected prediction shape: (1, 2), expected (1, 1)]
+[2025-04-19 08:23:02,994: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:23:02] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 08:26:35,968: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:26:35] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 08:26:36,806: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:26:36,864: INFO: prediction: Input image shape: (1, 224, 224, 3)]
+[2025-04-19 08:26:38,424: INFO: prediction: Model prediction: [[0.04791145 0.9520886 ]], Shape: (1, 2)]
+[2025-04-19 08:26:38,425: ERROR: prediction: Unexpected prediction shape: (1, 2), expected (1, 1)]
+[2025-04-19 08:26:38,427: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:26:38] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 08:26:46,115: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:26:46] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 08:26:47,423: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:26:47,535: INFO: prediction: Input image shape: (1, 224, 224, 3)]
+[2025-04-19 08:26:49,229: WARNING: polymorphic_function: 5 out of the last 5 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x000001C4A3D03880> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-04-19 08:26:49,306: INFO: prediction: Model prediction: [[0.04791145 0.9520886 ]], Shape: (1, 2)]
+[2025-04-19 08:26:49,307: ERROR: prediction: Unexpected prediction shape: (1, 2), expected (1, 1)]
+[2025-04-19 08:26:49,308: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:26:49] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 08:27:00,820: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-19 08:27:00,822: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 08:27:00,824: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 08:27:00,825: INFO: common: created directory at: artifacts]
+[2025-04-19 08:27:00,826: INFO: common: created directory at: data_ingestion]
+[2025-04-19 08:27:00,826: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1e3q72lfBRd5KX8KulVX39q34vW3y2M2b/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-19 08:28:36,967: INFO: data_ingestion: File downloaded successfully: artifacts/data_ingestion/data.zip]
+[2025-04-19 08:28:37,848: INFO: data_ingestion: File extracted successfully to artifacts/data_ingestion]
+[2025-04-19 08:28:37,848: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-19 08:28:37,849: INFO: main: *******************]
+[2025-04-19 08:28:37,850: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-19 08:28:37,854: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 08:28:37,856: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 08:28:37,857: INFO: common: created directory at: artifacts]
+[2025-04-19 08:28:37,857: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-19 08:28:38,242: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 08:28:38,525: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 08:28:38,655: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-04-19 08:28:38,655: INFO: main: *******************]
+[2025-04-19 08:28:38,655: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-04-19 08:28:38,658: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 08:28:38,659: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 08:28:38,660: INFO: common: created directory at: artifacts]
+[2025-04-19 08:28:38,661: INFO: common: created directory at: artifacts\training]
+[2025-04-19 08:34:12,985: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 08:34:13,143: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-04-19 08:34:13,144: INFO: main: *******************]
+[2025-04-19 08:34:13,144: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-04-19 08:34:13,146: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 08:34:13,147: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 08:34:13,148: INFO: common: created directory at: artifacts]
+[2025-04-19 08:34:13,440: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:34:51,422: INFO: common: json file saved at: scores.json]
+[2025-04-19 08:34:51,423: INFO: common: json file saved at: scores.json]
+[2025-04-19 08:34:51,424: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-04-19 08:34:53,175: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:34:53] "GET /train?_=1745031086376 HTTP/1.1" 200 -]
+[2025-04-19 08:35:20,170: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:35:20] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 08:35:21,415: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:35:21,530: INFO: prediction: Input image shape: (1, 224, 224, 3)]
+[2025-04-19 08:35:23,515: WARNING: polymorphic_function: 6 out of the last 6 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x000001C4A3E0E2A0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-04-19 08:35:24,597: INFO: prediction: Model prediction: [[0.04791145 0.9520886 ]], Shape: (1, 2)]
+[2025-04-19 08:35:24,603: ERROR: prediction: Unexpected prediction shape: (1, 2), expected (1, 1)]
+[2025-04-19 08:35:24,608: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:35:24] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 08:39:07,044: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:39:07] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 08:39:08,155: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:39:08,255: INFO: prediction: Input image shape: (1, 224, 224, 3)]
+[2025-04-19 08:39:10,181: INFO: prediction: Model prediction: [[0.04791145 0.9520886 ]], Shape: (1, 2)]
+[2025-04-19 08:39:10,181: ERROR: prediction: Unexpected prediction shape: (1, 2), expected (1, 1)]
+[2025-04-19 08:39:10,183: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:39:10] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 08:39:23,324: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-19 08:39:23,326: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 08:39:23,328: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 08:39:23,330: INFO: common: created directory at: artifacts]
+[2025-04-19 08:39:23,330: INFO: common: created directory at: data_ingestion]
+[2025-04-19 08:39:23,331: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1e3q72lfBRd5KX8KulVX39q34vW3y2M2b/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-19 08:40:45,054: INFO: data_ingestion: File downloaded successfully: artifacts/data_ingestion/data.zip]
+[2025-04-19 08:40:45,893: INFO: data_ingestion: File extracted successfully to artifacts/data_ingestion]
+[2025-04-19 08:40:45,894: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-19 08:40:45,894: INFO: main: *******************]
+[2025-04-19 08:40:45,894: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-19 08:40:45,896: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 08:40:45,897: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 08:40:45,899: INFO: common: created directory at: artifacts]
+[2025-04-19 08:40:45,899: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-19 08:40:46,371: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 08:40:46,562: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 08:40:46,686: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-04-19 08:40:46,687: INFO: main: *******************]
+[2025-04-19 08:40:46,687: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-04-19 08:40:46,689: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 08:40:46,691: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 08:40:46,691: INFO: common: created directory at: artifacts]
+[2025-04-19 08:40:46,692: INFO: common: created directory at: artifacts\training]
+[2025-04-19 08:46:24,997: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-19 08:46:25,144: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-04-19 08:46:25,145: INFO: main: *******************]
+[2025-04-19 08:46:25,145: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-04-19 08:46:25,147: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 08:46:25,149: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 08:46:25,150: INFO: common: created directory at: artifacts]
+[2025-04-19 08:46:25,418: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:47:01,499: INFO: common: json file saved at: scores.json]
+[2025-04-19 08:47:01,502: INFO: common: json file saved at: scores.json]
+[2025-04-19 08:47:01,502: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-04-19 08:47:02,935: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:47:02] "GET /train?_=1745031086377 HTTP/1.1" 200 -]
+[2025-04-19 08:47:49,403: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:47:49] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 08:47:50,459: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:47:50,517: INFO: prediction: Input image shape: (1, 224, 224, 3)]
+[2025-04-19 08:47:52,198: INFO: prediction: Model prediction: [[0.04791145 0.9520886 ]], Shape: (1, 2)]
+[2025-04-19 08:47:52,199: ERROR: prediction: Unexpected prediction shape: (1, 2), expected (1, 1)]
+[2025-04-19 08:47:52,201: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:47:52] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 08:52:23,824: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:52:23] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 08:52:24,857: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:52:24,961: INFO: prediction: Input image shape: (1, 224, 224, 3)]
+[2025-04-19 08:52:27,989: INFO: prediction: Model prediction: [[0.04791145 0.9520886 ]], Shape: (1, 2)]
+[2025-04-19 08:52:27,993: ERROR: prediction: Unexpected prediction shape: (1, 2), expected (1, 1)]
+[2025-04-19 08:52:27,997: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:52:27] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 08:53:39,413: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:53:39] "GET / HTTP/1.1" 200 -]
+[2025-04-19 08:53:43,111: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:53:43] "GET / HTTP/1.1" 200 -]
+[2025-04-19 08:53:52,003: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:53:52] "OPTIONS /predict HTTP/1.1" 200 -]
+[2025-04-19 08:53:52,914: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:53:52,965: INFO: prediction: Input image shape: (1, 224, 224, 3)]
+[2025-04-19 08:53:54,581: INFO: prediction: Model prediction: [[0.04791145 0.9520886 ]], Shape: (1, 2)]
+[2025-04-19 08:53:54,582: ERROR: prediction: Unexpected prediction shape: (1, 2), expected (1, 1)]
+[2025-04-19 08:53:54,583: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:53:54] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 08:54:20,106: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.166.217:8080]
+[2025-04-19 08:54:20,106: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-19 08:54:24,627: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:54:24] "GET / HTTP/1.1" 200 -]
+[2025-04-19 08:54:42,583: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:54:42,663: INFO: prediction: Input image shape: (1, 224, 224, 3)]
+[2025-04-19 08:54:44,464: INFO: prediction: Model prediction: [[0.01242971 0.98757035]], Shape: (1, 2)]
+[2025-04-19 08:54:44,467: INFO: prediction: Class: Tumor, Confidence: 0.9875703454017639]
+[2025-04-19 08:54:44,468: INFO: prediction: Returning result: {'class': 'Tumor', 'confidence': 0.9875703454017639}]
+[2025-04-19 08:54:44,470: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:54:44] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 08:55:38,991: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:55:38] "GET / HTTP/1.1" 200 -]
+[2025-04-19 08:55:49,092: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:55:49,154: INFO: prediction: Input image shape: (1, 224, 224, 3)]
+[2025-04-19 08:55:49,571: INFO: prediction: Model prediction: [[0.01242971 0.98757035]], Shape: (1, 2)]
+[2025-04-19 08:55:49,571: INFO: prediction: Class: Tumor, Confidence: 0.9875703454017639]
+[2025-04-19 08:55:49,572: INFO: prediction: Returning result: {'class': 'Tumor', 'confidence': 0.9875703454017639}]
+[2025-04-19 08:55:49,573: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:55:49] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 08:56:30,633: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-19 08:56:30,673: INFO: prediction: Input image shape: (1, 224, 224, 3)]
+[2025-04-19 08:56:31,266: INFO: prediction: Model prediction: [[0.01242971 0.98757035]], Shape: (1, 2)]
+[2025-04-19 08:56:31,267: INFO: prediction: Class: Tumor, Confidence: 0.9875703454017639]
+[2025-04-19 08:56:31,267: INFO: prediction: Returning result: {'class': 'Tumor', 'confidence': 0.9875703454017639}]
+[2025-04-19 08:56:31,268: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 08:56:31] "POST /predict HTTP/1.1" 200 -]
+[2025-04-19 09:00:36,142: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:00:36] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:00:41,445: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:00:41] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:00:44,228: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:00:44] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:00:44,908: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:00:44] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:00:45,310: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:00:45] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:00:45,653: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:00:45] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:00:46,028: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:00:46] "GET / HTTP/1.1" 200 -]
+[2025-04-19 09:04:06,525: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.166.217:8080]
+[2025-04-19 09:04:06,527: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-19 09:04:10,648: INFO: _internal: 127.0.0.1 - - [19/Apr/2025 09:04:10] "GET / HTTP/1.1" 200 -]
